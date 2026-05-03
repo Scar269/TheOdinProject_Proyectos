@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('../resources/Norse.otf') format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.izquierda {
+    flex: 0.3;
+    position: relative;
+    font-family: 'Norse',sans-serif;
+}
+
+.izquierda img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.logo-overlay {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.logo-overlay img {
+    height: 20%;
+    width: 20%;
+}
+
+.logo-overlay h1 {
+    font-size: 80px;
+}
+
+.derecha {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-header {
+    background-color: #dadada;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 80px 30px 35px 80px;
+    display: block;
+}
+
+form {
+    margin-top: 40px;
+    padding-left: 80px;
+}
+
+form h2{
+    margin-bottom: 20px;
+}
+
+form input{
+    margin-right: 45px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    border: 2px solid #dadada;
+}
+
+input:user-invalid {
+    border-color: red;
+}
+
+input:user-valid {
+    border-color: rgb(72, 230, 72);
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #2f80ed;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+span {
+    color: #596D48;
+}
